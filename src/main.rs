@@ -44,9 +44,6 @@ fn get_key(name: String) -> VIRTUAL_KEY {
 }
 
 fn main() {
-    println!("SHIT");
-    println!("Name is: {}", program_name().expect("fuck"));
-
     let command = program_name().expect("Could not get program name").split('.').next().to_owned().unwrap().to_string();
 
     // Убирает фокус
